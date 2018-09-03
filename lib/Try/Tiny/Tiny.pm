@@ -1,6 +1,6 @@
 package Try::Tiny::Tiny; use strict; use warnings;
 
-# ABSTRACT: slim Try::Tiny down as far as reasonably possible
+$Try::Tiny::Tiny::VERSION = '0.001';
 
 my $effective;
 
@@ -23,6 +23,12 @@ $effective;
 __END__
 
 =pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+Try::Tiny::Tiny - slim Try::Tiny down as far as reasonably possible
 
 =head1 SYNOPSIS
 
@@ -52,3 +58,5 @@ This module will fail to load if you load it too late to take effect.
 =head1 SEE ALSO
 
 L<Try::Catch> E<ndash> a stripped-down clone of L<Try::Tiny>
+
+=cut
