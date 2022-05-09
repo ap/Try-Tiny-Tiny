@@ -66,7 +66,7 @@ for (qw(configure build test runtime)) {
 	defined $r->{$_} or delete $r->{$_} for keys %$r;
 }
 
-$MM_ARGS{MIN_PERL_VERSION} = delete $MM_ARGS{PREREQ_PM}{perl} || 0;
+$MM_ARGS{MIN_PERL_VERSION} = eval delete $MM_ARGS{PREREQ_PM}{perl} || 0;
 
 delete $MM_ARGS{MIN_PERL_VERSION}
 	if $eumm_version < 6.47_01;
