@@ -12,7 +12,7 @@ my %META = (
 			ExtUtils::MakeMaker 0
 		)} },
 		runtime => { requires => {qw(
-			perl                5.005_04
+			perl                5.006
 			Try::Tiny           0
 		)} },
 	},
