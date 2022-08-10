@@ -9,6 +9,7 @@ my %META = (
 	x_copyright => { holder => 'Aristotle Pagaltzis', year => 2017 },
 	license     => 'perl_5',
 	resources   => {
+		license    => [ q<https://dev.perl.org/licenses/> ],
 		repository => { type => 'git', url => "$sc.git", web => $sc },
 		bugtracker => { web => $bt },
 	},
