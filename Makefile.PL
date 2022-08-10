@@ -1,6 +1,7 @@
 use 5.006; use strict; use warnings;
 
-my $u = 'github.com/ap/Try-Tiny-Tiny';
+my $sc = q<https://github.com/ap/Try-Tiny-Tiny>;
+my $bt = q<https://rt.cpan.org/Public/Dist/Display.html?Name=Try-Tiny-Tiny>;
 
 my %META = (
 	name        => 'Try-Tiny-Tiny',
@@ -8,8 +9,8 @@ my %META = (
 	license     => 'perl_5',
 	x_copyright => { holder => 'Aristotle Pagaltzis', year => 2017 },
 	resources   => {
-		repository => { type => 'git', url => "git://$u.git", web => "https://$u" },
-		bugtracker => { web => "https://$u/issues" },
+		repository => { type => 'git', url => "$sc.git", web => $sc },
+		bugtracker => { web => $bt },
 	},
 	dynamic_config => 0,
 	prereqs => {
